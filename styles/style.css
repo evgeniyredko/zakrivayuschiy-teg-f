@@ -11,8 +11,35 @@
 */
 
 .page {
+  margin: 0 auto;
+  font-family: var(--font-family-base), sans-serif;
+  background: url(../images/background.png) center;
+  background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-family-base), sans-serif;
   font-variation-settings: "wght" var(--font-weight-text);
+  max-inline-size: 700px;
+}
+
+/* Header */
+.header {
+  align-self: center;
+  margin-block: 100px;
+  border: 2px solid var(--color-dark);
+  padding-block: clamp(7.5rem, 6.9231rem + 2.4615vw, 8rem);
+  font-family: var(--font-family-accent), sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--color-light);
+}
+
+.header__teg {
+  display: block;
+  margin-block-end: 20px;
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
 }
