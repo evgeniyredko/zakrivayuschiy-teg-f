@@ -9,4 +9,10 @@
 
   --color-light: #fff;
   --color-dark: #000;
+
+  --container-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+
+  --contour-color: #000;
+  --main-body-color: #fff;
+  --animation-fill-color: #ff0000;
 }
