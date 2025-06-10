@@ -153,14 +153,36 @@
       </section>
     </main>
     <footer class="footer container">
-      <button type="button" class="footer__save-button button-animation">
+      <button
+        type="button"
+        onclick="window['save-dialog'].showModal()"
+        aria-controls="save-dialog"
+        class="footer__save-button button-animation"
+      >
         <span class="button__icon">
           <svg viewBox="0 0 21 21">
-            <use href="./svg/floppy.svg#floppy" />
+            <use href="./svg/floppy.svg#floppy-1" />
           </svg>
         </span>
         <span class="button__text">Сохранить на память</span>
       </button>
+      <dialog class="save-doalog" id="save-dialog">
+        <div class="save-dialog__text">
+          <span class="save-dialog__icon">
+            <svg viewBox="0 0 39 39">
+              <use href="./svg/floppy.svg#floppy-2" />
+            </svg>
+          </span>
+          <h2 class="save-doalog__title">Вставьте дискету, чтобы продолжить</h2>
+        </div>
+        <button
+          class="save-dialog__confirm button-animation"
+          type="button"
+          onclick="window['save-dialog'].close()"
+        >
+          <span class="button__text">Ок</span>
+        </button>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
