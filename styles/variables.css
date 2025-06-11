@@ -15,4 +15,12 @@
   --contour-color: #000;
   --main-body-color: #fff;
   --animation-fill-color: #ff0000;
+
+  --page-background: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(#d3d3d3 2px, transparent 4px),
+    linear-gradient(#e7e7e7, #1a1a1a);
 }
